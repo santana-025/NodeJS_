@@ -1,0 +1,25 @@
+No Terminal:
+
+Node        > Inicia o node
+Ctrl + c 2x > Sair do node
+.exit       > Sair do node
+.help       > Ajuda  
+node NomeArquivo.js > Execulta o NomeArquivo
+
+
+No Browser :
+
+localhost:(1337 porta)  >  Onde o servidor esta rodando
+localhost é a mesma coisa que ( 127.0.0.1:1337 )
+* Porta * = A que escolhemos para ficar escultando. 
+
+URL :
+'/' = host 
+
+
+/?  = para passar os parametros
+&   = e para passar mais 1 parametro
+parametro=nome+sobrenome = + usado com o espaço vazio
+
+ex: 
+http://localhost:3000/?nome=jorge&cidade=Valenca >>

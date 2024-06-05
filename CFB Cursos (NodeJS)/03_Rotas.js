@@ -9,7 +9,7 @@ const servidor = http.createServer((req, res) => {
         "content-Type": "text/html"
     });
     // criando Rotas : 
-    if (req.url == '/') {     // Precisamos pegar a requisição e comparar sua url com a URL
+    if (req.url == '/') {     // Precisamos pegar a requisição e comparar sua url com a URL padrão /
         res.write("<h1> Seja Bem-Vindo </h1>");
     } else if (req.url == '/servicos') {            // criando a rota /servicos
         res.write("<h1> Qual Serviço Deseja ? </h1>");
@@ -28,6 +28,7 @@ servidor.listen(porta, host, () => { console.log("Servidor Rodando !") });
 
 
 // res.writeHead(status, {"tipo de retorno" : "normal ou html"}
+// Tipos de Mensagens
 // "content-Type":"text/html" =  Texto Html
 // "content-Type":"text/plan" =  Texto Normal
 // "content-Type":"text/json" =  Texto JSON

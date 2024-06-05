@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     // (nome do arquivo, função com (casso um erro,e retorno do arquivo aqui)
     fs.readFile('index.html', (err, arquivo) => {
         res.writeHead(200, { "content-Type": "text/html" })
-        res.write(arquivo); // escreve o arquivo que foi retornado no arquivo
+        res.write(arquivo); // escreve o arquivo que foi retornado no corpo da pagina
         return res.end();
     })
 })

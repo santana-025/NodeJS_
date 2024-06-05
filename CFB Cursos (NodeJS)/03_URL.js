@@ -12,7 +12,7 @@ const servidor = http.createServer((req, res) => {
     });
     // Parametro de entrada: 
     res.write(req.url);  // Me retorna a rota que for digitada. caso não tenha me return host "/"
-    const param = url.parse(req.url, true).query;
+    const param = url.parse(req.url, true).query;   // Transforma em textos
     res.write('<br/>' + param.nome);    // 1 Parametro de entrada
     res.write('<br/>' + param.cidade);  // 2 Parametro de entrada  
     // Return :             /? para passar os parametros e = & espaço = +

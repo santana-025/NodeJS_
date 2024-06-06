@@ -43,3 +43,10 @@ ao inves de res.end("JhonDev"); mandamos um
 
 res.send("Texto");
 res.json({"nome":"jhon"});
+
+
+Rotas >>
+
+npm install router --save
+
+caso não tenha

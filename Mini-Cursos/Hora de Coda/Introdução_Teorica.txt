@@ -1,0 +1,84 @@
+API = Application Programming Interface 
+(Interface de Programação de Aplicações)
+
+- Simplifica desenvolvimento, Não necessita de Telas;
+- Fácil Integração com sistemas, apenas dando respostas;
+- Padrão de desenvolvimento, permitindo a troca de APIs;
+- Performace por causa das requisições e respostas rápidas;
+- Exemplo Prático: cotação de frete;
+
+Basicamente sempre ida e volta, voce faz uma requisição e ela 
+te devolve uma resposta e nem sempre essa resposta da certo 
+e pra isso tem o status code que previne cada coisa que pode acontecer
+
+                    Tipos de API
+
+- API Pública: disponibilizada para qualquer um acessar, sem necessidade
+de autenticação; Livres
+
+- API Privada: quando uma API é ciada para utilização entre sistemas de uma emoresa,
+requer autenticação; Empresas
+
+- API de terceiros: quando a API é um produto, podendo ser integrada em um sitema,
+requer autenticação; Pagas
+
+                    Comunicação com API
+
+- Normalmente feita através de XML ou JSON;
+
+- Devido a simplicidade destes tipos de dados;
+
+- As requisições e respostas são feitas através do HTTP;
+
+- Onde podemos seguir um padrão, para a criação de APIs robustas 
+e que serão de facil ultilização;
+
+                    Verbos HTTP
+
+- Alterando os verbos podemos realizar requisições diferentes,
+simplificando a construção da nossa API e seus endpoints;
+
+- GET : Verbo para resgatar algum recurso;
+- POST : Com o POST queremos enviar dados a API;
+- DELETE : Queremos remover algum registro do banco de dados;
+- PUT : Atualização de registros;
+- PATCH : Atualização parcial de registros;
+
+Existem outros mas esse são os mais ultilizados
+
+                    O que é endpoints ?
+
+- É a URL que acessamos da API para extrair uma resposta;
+Ex: localhost:3000/users/1 - GET    (Algumas api passam paramentros aqui)
+obs : Sempre é acompanhado com o dominio da API;
+
+- Mesmo com endpoints com verbos diferentes podem ter resultados
+diferentes.
+
+- Está é uma das técnicas para reduzir a complexidade e 
+aplicar o padrão REST;
+
+                    O que é REST ?
+
+- REST é um padrão/conceito de arquitetura ligados a APIs e o protocolo HTTP;
+
+- Podemos implementar este padrão, que é composto de 6 partes
+para torna nossa API em RESTfull;
+
+- Eles são :
+
+Uniformidade = todas as requisições com locais diferentes mas com o mesmo endpoints tem que ter a mesma resposta
+Desacoplação = Api tem que ter uma req e res independente 
+Stateless  = cada req são independentes 
+Cache  = dar respostas rapidas sistema de cash
+Arquitetura de Camadas =  seguir a herarquia das paginas independente das req
+Code on demand = codigo tem que rodar por demanda
+
+se tiver todos os requisistos pode ser considerado uma API RESTfull
+
+                    Postman
+
+É um software que permite testar APIs que criamos;
+Pode inserir um endpoint, métodos HTTP, inserir dados no corpo da req 
+e muito mais.
+Muiro ultilizado na indústria de software;

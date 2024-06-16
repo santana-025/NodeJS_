@@ -3,6 +3,6 @@
     console.log("Obeter todos os Clientes")
     const clientes = await integraçaoDB.todosUser()
     console.log(clientes)
-
+    
 }
 )()

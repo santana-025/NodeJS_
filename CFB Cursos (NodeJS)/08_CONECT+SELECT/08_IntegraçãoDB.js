@@ -16,4 +16,12 @@ const todosUser = async () => {
     return await linhas
 }
 
-module.exports = { todosUser }
+// Adicionando User
+const insereUser = async (cliente) => {
+    const con = await conectar()
+    const sql = "INSERT INTO users (first_name, last_name, sallary, dob) VALUES (?,?,?,?)"
+    const valores = [cliente.first_name, cliente.last_name, cliente.sallary, cliente.dob]
+    await con.query(sql, valores)
+}
+
+module.exports = { todosUser, insereUser }

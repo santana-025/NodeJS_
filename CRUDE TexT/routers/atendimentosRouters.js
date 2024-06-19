@@ -8,8 +8,10 @@ const atendimentoController = require("../controller/atendimentosController");
 
 // GET
 router.get("/atendimentos", (req, res) => {
-    const resposta = atendimentoController.buscar();
-    res.send(resposta);
+    const listaAtendimentos = atendimentoController.buscar();
+    listaAtendimentos
+        .then(atendimentos => res.status(200).json(atendimentos))
+        .catch(error => res.status(400).json(error.message));
 });
 
 // POST

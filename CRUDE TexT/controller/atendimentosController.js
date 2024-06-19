@@ -1,6 +1,8 @@
+const atendimentosModel = require("../models/atendimentosmodel");
+
 class AtendimentoController {
     buscar() {
-        return "Buscando Atendimentos"
+        return atendimentosModel.listar()
     }
     criar() {
         return "Criando Atendimentos";
